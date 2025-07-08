@@ -1,0 +1,41 @@
+{
+  "__comment": "This is a test account dataset",
+  "account": {
+    "HDFC Bank": {
+      "label": "saving-account",
+      "balance": 75000.0,
+      "note": "Main salary account"
+    },
+    "SBI Bank": {
+      "label": "saving-account",
+      "balance": 15000.0,
+      "note": "Family account"
+    },
+    "ICICI FD": {
+      "label": "investments, fixed-deposit",
+      "balance": 500000.0,
+      "note": "5-year FD at 6.5%"
+    },
+    "Personal Loan": {
+      "label": "loan, personal-loan, personal",
+      "balance": -50000.0,
+      "emi": 5000.0,
+      "note": "Taken from HDFC Bank"
+    },
+    "Paytm Wallet": {
+      "label": "saving-account",
+      "balance": 1500.0,
+      "note": "Digital payments"
+    },
+    "Zerodha Equity": {
+      "label": "investments, stocks",
+      "balance": 50000.0,
+      "note": "Equity investments"
+    },
+    "Groww Mutual Fund": {
+      "label": "investments, mutual-funds",
+      "balance": 150000.0,
+      "note": "ELSS fund for tax saving"
+    }
+  }
+}

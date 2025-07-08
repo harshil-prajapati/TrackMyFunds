@@ -21,7 +21,7 @@ It helps you keep track of your **income**, **expenses**, **transfers**, and **n
 
 ```
 TrackMyFunds/
-├── YOUR_NAME/                # User-specific finance folder
+├── Test_User/                # User-specific finance folder
 │   ├── accounts.json         # Account list with balance and labels
 │   ├── log.json              # All actions log
 │   ├── summary.json          # Reserved for future summary
@@ -50,6 +50,63 @@ python main.py
 ```
 
 You’ll be prompted to enter your name (used for creating your data folder) and then interact with the main menu.
+
+### 📝 Managing Accounts and Users
+
+#### 🔹 Account Setup
+
+Currently, you need to manually enter your account data inside the `accounts.json` file. Here's the format:
+
+```json
+{
+  "account": {
+    "HDFC Bank": {
+      "label": "saving-account",
+      "balance": 125000.0,
+      "note": "Main salary account"
+    },
+    "Axis Credit Card": {
+      "label": "loan, credit-card",
+      "balance": -7200.0,
+      "limit": 50000,
+      "note": "Personal credit card"
+    },
+    "Groww MF": {
+      "label": "investments, mutual-funds",
+      "balance": 18000.0,
+      "note": "ELSS mutual fund"
+    }
+  }
+}
+```
+
+- Use **kebab-case labels** (`saving-account`, `mutual-funds`, etc.)
+- Add optional fields like `note`, `limit`, or `emi` for loans
+
+---
+
+#### 🔹 Managing Multiple Users
+
+You can manage multiple users by simply entering different names when you start the program.  
+Each user will get their own folder like:
+
+```
+TrackMyFunds/
+├── Test_User/            ← Your personal data
+│   ├── accounts.json
+│   └── transactions/...
+├── User_Test/            ← Another user
+│   ├── accounts.json
+│   └── transactions/...
+```
+
+When prompted:
+
+```bash
+Enter your name (folder will be created): Test_User
+```
+
+It will load or create the folder `TrackMyFunds/Test_User/` and work independently from others.
 
 ---
 

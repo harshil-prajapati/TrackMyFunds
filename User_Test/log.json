@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "08-07-25 23:51:47",
+    "user_date": "05-06-25",
+    "action": "Income added",
+    "file": "/home/hacker/harshil/TrackMyFunds/User_Test/transactions/income/2025-2026.json"
+  },
+  {
+    "timestamp": "08-07-25 23:52:15",
+    "user_date": "05-06-25",
+    "action": "Expenses added",
+    "file": "/home/hacker/harshil/TrackMyFunds/User_Test/transactions/expenses/2025-2026.json"
+  },
+  {
+    "timestamp": "08-07-25 23:52:45",
+    "user_date": "05-06-25",
+    "action": "Transfers added",
+    "file": "/home/hacker/harshil/TrackMyFunds/User_Test/transactions/transfers/2025-2026.json"
+  }
+]
